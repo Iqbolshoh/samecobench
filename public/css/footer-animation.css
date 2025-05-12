@@ -1,0 +1,368 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;700&display=swap');
+
+    :root {
+        --primary-color: #00ff88;
+        --secondary-color: #ff007a;
+        --accent-color-footer: #00b7ff;
+        --background-dark: #0a0e1a;
+        --text-light: #e0e6ff;
+        --glow-effect: 0 0 15px rgba(0, 255, 136, 0.7);
+        --circuit-blue: #00b7ff;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .cta-container {
+        font-family: 'Roboto Mono', monospace;
+        position: relative;
+        width: 100%;
+        height: 200px;
+        padding: 20px;
+        background: linear-gradient(135deg, rgba(10, 14, 26, 0.95), rgba(20, 25, 40, 0.9));
+        box-shadow: 0 0 50px rgba(0, 255, 136, 0.3);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(0, 255, 136, 0.3);
+        border-bottom: 1px solid rgba(0, 255, 136, 0.3);
+        z-index: 1;
+    }
+
+    .tech-grid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:
+            repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 30px),
+            repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 30px);
+        z-index: 1;
+    }
+
+    .binary-matrix {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+        overflow: hidden;
+    }
+
+    .binary-stream {
+        position: absolute;
+        color: var(--primary-color);
+        font-size: 0.7rem;
+        opacity: 0.3;
+        white-space: nowrap;
+        animation: matrix-fall linear infinite;
+        user-select: none;
+        text-shadow: 0 0 5px var(--primary-color);
+    }
+
+    @keyframes matrix-fall {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        100% {
+            transform: translateY(200px);
+        }
+    }
+
+    .circuit-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        opacity: 0.1;
+    }
+
+    .circuit-line {
+        position: absolute;
+        background: var(--circuit-blue);
+        animation: circuit-flow 3s infinite ease-in-out;
+        box-shadow: 0 0 5px var(--circuit-blue);
+    }
+
+    @keyframes circuit-flow {
+
+        0%,
+        100% {
+            opacity: 0.1;
+        }
+
+        50% {
+            opacity: 0.4;
+        }
+    }
+
+    .floating-icons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        pointer-events: none;
+    }
+
+    .floating-icon {
+        position: absolute;
+        color: var(--accent-color-footer);
+        font-size: 1rem;
+        opacity: 0;
+        filter: drop-shadow(0 0 5px var(--accent-color-footer));
+        animation: float-icon 15s infinite ease-in-out;
+        z-index: 4;
+    }
+
+    @keyframes float-icon {
+        0% {
+            transform: translate(0, 0) scale(0.8);
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 0.4;
+        }
+
+        90% {
+            opacity: 0.4;
+        }
+
+        100% {
+            transform: translate(calc(50vw - 100px), calc(-50vh + 100px)) scale(1.2);
+            opacity: 0;
+        }
+    }
+
+    .scanline {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to bottom, transparent, rgba(0, 255, 136, 0.5), transparent);
+        animation: scan 4s linear infinite;
+        z-index: 5;
+    }
+
+    @keyframes scan {
+        0% {
+            top: -2px;
+        }
+
+        100% {
+            top: 200px;
+        }
+    }
+
+    .corner {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        z-index: 6;
+        border-color: var(--primary-color);
+        border-style: solid;
+        border-width: 0;
+    }
+
+    .corner-tl {
+        top: 10px;
+        left: 10px;
+        border-top-width: 2px;
+        border-left-width: 2px;
+    }
+
+    .corner-tr {
+        top: 10px;
+        right: 10px;
+        border-top-width: 2px;
+        border-right-width: 2px;
+    }
+
+    .corner-bl {
+        bottom: 10px;
+        left: 10px;
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+    }
+
+    .corner-br {
+        bottom: 10px;
+        right: 10px;
+        border-bottom-width: 2px;
+        border-right-width: 2px;
+    }
+
+    .heading {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--text-light);
+        text-align: center;
+        margin-bottom: 10px;
+        background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        z-index: 7;
+        position: relative;
+        animation: text-glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes text-glow {
+        0% {
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+
+        100% {
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+        }
+    }
+
+    .description {
+        color: var(--text-light);
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 15px;
+        line-height: 1.4;
+        opacity: 0.9;
+        z-index: 7;
+        max-width: 80%;
+        position: relative;
+    }
+
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        z-index: 7;
+        position: relative;
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 20px;
+        border: 1px solid var(--primary-color);
+        border-radius: 30px;
+        background: rgba(0, 255, 136, 0.1);
+        color: var(--text-light);
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 8;
+        backdrop-filter: blur(5px);
+    }
+
+    .btn:hover {
+        background: var(--primary-color);
+        color: var(--background-dark);
+        box-shadow: var(--glow-effect);
+        transform: translateY(-3px);
+    }
+
+    .btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.7s;
+    }
+
+    .btn:hover::before {
+        left: 100%;
+    }
+
+    .btn-icon {
+        margin-right: 8px;
+        font-size: 0.9rem;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.2);
+        }
+    }
+
+    .particle {
+        position: absolute;
+        background: var(--primary-color);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0;
+        animation: particle-float linear infinite;
+    }
+
+    @keyframes particle-float {
+        0% {
+            transform: translateY(0) translateX(0);
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 0.3;
+        }
+
+        90% {
+            opacity: 0.3;
+        }
+
+        100% {
+            transform: translateY(-100px) translateX(20px);
+            opacity: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .heading {
+            font-size: 1.4rem;
+        }
+
+        .description {
+            font-size: 0.8rem;
+            max-width: 90%;
+        }
+
+        .cta-buttons {
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 6px 15px;
+            font-size: 0.7rem;
+        }
+
+        .floating-icon {
+            font-size: 0.8rem;
+        }
+    }
