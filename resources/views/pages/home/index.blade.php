@@ -36,7 +36,7 @@
                 @foreach ($features as $index => $feature)
                     <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="{{ $index * 100 }}">
                         <div class="featured-item position-relative">
-                            <div class="icon"><i class="{{ $feature['icon'] }} icon"></i></div>
+                            <div class="icon"><i class="{{ $feature['icon_class'] }} icon"></i></div>
                             <h4><a href="#" class="stretched-link">{{ $feature['title'] }}</a></h4>
                             <p>{!! $feature['description'] !!}</p>
                         </div>
