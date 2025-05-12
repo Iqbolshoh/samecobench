@@ -4,6 +4,18 @@
 @section('description', 'Iqbolshoh tomonidan tayyorlangan dasturlash, kodlash bo‘yicha maslahatlar va web dasturlash resurslarini kashf eting.')
 @section('keywords', 'Iqbolshoh, Web Developer, Laravel, PHP, JavaScript, Portfolio, Online Kurslar, Full-Stack Dasturlash, Dasturlash')
 
+<style>
+.content img,
+.content svg {
+    vertical-align: middle !important;
+    width: 100% !important;
+    height: auto !important;
+}
+.attachment__name, .attachment__size{
+    display: none;
+}
+</style>
+
 @section('content')
     <div class="page-title" data-aos="fade">
         <div class="container">
