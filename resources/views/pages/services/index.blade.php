@@ -1,25 +1,25 @@
 @extends('layouts.app')
 
-@section('title', 'Services')
-@section('description', 'Discover tutorials, coding tips, and web development resources by Iqbolshoh, a passionate full-stack developer and educator.')
-@section('keywords', 'Iqbolshoh, Web Developer, Laravel, PHP, JavaScript, Portfolio, Online Courses, Full-Stack Development, Programming')
+@section('title', 'Xizmatlar')
+@section('description', 'Iqbolshoh tomonidan tayyorlangan qo‘llanmalar, kodlash bo‘yicha maslahatlar va web dasturlash resurslarini kashf eting.')
+@section('keywords', 'Iqbolshoh, Web Dasturchi, Laravel, PHP, JavaScript, Portfolio, Onlayn Kurslar, Full-Stack Dasturlash, Dasturlash')
 
 @section('content')
-    <!-- Page Title -->
+    <!-- Sahifa sarlavhasi -->
     <div class="page-title" data-aos="fade">
         <div class="container">
             <nav class="breadcrumbs">
                 <ol>
-                    <li><a href="/">Home</a></li>
-                    <li class="current">Services</li>
+                    <li><a href="/">Bosh sahifa</a></li>
+                    <li class="current">Xizmatlar</li>
                 </ol>
             </nav>
-            <h1>Services</h1>
+            <h1>Xizmatlar</h1>
         </div>
     </div>
-    <!-- End Page Title -->
+    <!-- Sahifa sarlavhasi tugadi -->
 
-    <!-- Skills Section -->
+    <!-- Ko‘nikmalar bo‘limi -->
     <section id="skills" class="skills section">
         <div class="container section-title" data-aos="fade-up">
             <h2>{{ $service_sections[0]->title }}</h2>
@@ -59,7 +59,7 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Xizmatlar bo‘limi -->
     <section id="services" class="services section">
         <div class="container">
             <div class="row gy-4">

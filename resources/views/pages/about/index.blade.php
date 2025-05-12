@@ -1,38 +1,38 @@
 @extends('layouts.app')
 
-@section('title', 'About Us')
-@section('description', 'Discover tutorials, coding tips, and web development resources by Iqbolshoh, a passionate full-stack developer and educator.')
-@section('keywords', 'Iqbolshoh, Web Developer, Laravel, PHP, JavaScript, Portfolio, Online Courses, Full-Stack Development, Programming')
+@section('title', 'Biz haqimizda')
+@section('description', 'Iqbolshoh – tajribali full-stack dasturchi va o‘qituvchi tomonidan yaratilgan dasturlash bo‘yicha darslar, maslahatlar va veb-resurslar.')
+@section('keywords', 'Iqbolshoh, Veb Dasturchi, Laravel, PHP, JavaScript, Portfolio, Onlayn Kurslar, Full-Stack Dasturlash, Dasturlash')
 
 @section('content')
-    <!-- Page Title -->
+    <!-- Sahifa sarlavhasi -->
     <div class="page-title" data-aos="fade">
         <div class="container">
             <nav class="breadcrumbs">
                 <ol>
-                    <li><a href="/">Home</a></li>
-                    <li class="current">About Us</li>
+                    <li><a href="/">Bosh sahifa</a></li>
+                    <li class="current">Biz haqimizda</li>
                 </ol>
             </nav>
-            <h1>About Us</h1>
+            <h1>Biz haqimizda</h1>
         </div>
     </div>
-    <!-- End Page Title -->
+    <!-- Sahifa sarlavhasi yakuni -->
 
-    <!-- About Section -->
+    <!-- Biz haqimizda bo‘limi -->
     <section id="about" class="section about">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row gy-4">
                 @foreach ($aboutItems as $about)
                     <div class="col-lg-6 order-1 order-lg-2">
                         @if (!empty($about['image']))
-                            <img src="{{ asset('storage/' . $about['image']) }}" class="img-fluid" alt="About Us">
+                            <img src="{{ asset('storage/' . $about['image']) }}" class="img-fluid" alt="Biz haqimizda">
                         @endif
                     </div>
                     <div class="col-lg-6 order-2 order-lg-1 content">
                         <h3>{{ $about['title'] }}</h3>
                         <p class="fst-italic">{!!  $about['text_1'] !!}</p>
-                        <h4>Our Services:</h4>
+                        <h4>Xizmatlarimiz:</h4>
                         @if (!empty($about['list_items']))
                             <ul>
                                 @foreach ($about['list_items'] as $item)
@@ -46,9 +46,9 @@
             </div>
         </div>
     </section>
-    <!-- End About Section -->
+    <!-- Biz haqimizda bo‘limi yakuni -->
 
-    <!-- Statistics Section -->
+    <!-- Statistika bo‘limi -->
     <section id="stats" class="stats section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row gy-4">
@@ -67,5 +67,5 @@
             </div>
         </div>
     </section>
-    <!-- End Statistics Section -->
+    <!-- Statistika bo‘limi yakuni -->
 @endsection

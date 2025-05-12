@@ -1,20 +1,20 @@
 @extends('layouts.app')
 
-@section('title', 'News Details')
-@section('description', 'Discover tutorials, coding tips, and web development resources by Iqbolshoh, a passionate full-stack developer and educator.')
-@section('keywords', 'Iqbolshoh, Web Developer, Laravel, PHP, JavaScript, Portfolio, Online Courses, Full-Stack Development, Programming')
+@section('title', 'Yangiliklar Tafsilotlari')
+@section('description', 'Iqbolshoh tomonidan tayyorlangan dasturlash, kodlash bo‘yicha maslahatlar va web dasturlash resurslarini kashf eting.')
+@section('keywords', 'Iqbolshoh, Web Developer, Laravel, PHP, JavaScript, Portfolio, Online Kurslar, Full-Stack Dasturlash, Dasturlash')
 
 @section('content')
     <div class="page-title" data-aos="fade">
         <div class="container">
             <nav class="breadcrumbs">
                 <ol>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="{{ route('news.index') }}">News</a></li>
+                    <li><a href="/">Bosh sahifa</a></li>
+                    <li><a href="{{ route('news.index') }}">Yangiliklar</a></li>
                     <li class="current">{{ Str::limit($newsItem->title, 30) }}</li>
                 </ol>
             </nav>
-            <h1>News Details</h1>
+            <h1>Yangiliklar Tafsilotlari</h1>
         </div>
     </div>
 
@@ -23,7 +23,7 @@
 
             <div class="col-lg-8">
 
-                <!-- Blog Details Section -->
+                <!-- Blog Tafsilotlari Bo'limi -->
                 <section id="blog-details" class="blog-details section">
                     <div class="container">
 
@@ -39,7 +39,7 @@
                                 <ul>
                                     <li>
                                         <i class="bi bi-eye" style="color: var(--accent-color);"></i>
-                                        {{ $newsItem->views }} Views
+                                        {{ $newsItem->views }} Ko'rish
                                     </li>
                                     <li>
                                         <i class="bi bi-clock" style="color: var(--accent-color);"></i>
@@ -60,11 +60,11 @@
                 <div class="widgets-container">
 
                     <div class="recent-posts-widget widget-item" id="recent-posts" aria-live="polite">
-                        <h3 class="widget-title" style="color: var(--heading-color);">Recent News</h3>
+                        <h3 class="widget-title" style="color: var(--heading-color);">So'nggi Yangiliklar</h3>
                         @if($recentNews->isEmpty())
                             <div class="alert alert-info"
                                 style="background-color: var(--surface-color); color: var(--default-color); border-color: var(--accent-color);">
-                                No recent posts available.
+                                So'nggi postlar mavjud emas.
                             </div>
                         @else
                             <div class="recent-news-list">
@@ -92,12 +92,12 @@
                                                     </time>
                                                     <span>
                                                         <i class="bi bi-eye me-1" style="color: var(--accent-color);"></i>
-                                                        {{ $recent->views }} views
+                                                        {{ $recent->views }} ko'rish
                                                     </span>
                                                 </div>
                                                 <a href="{{ route('news.show', $recent->id) }}" class="btn btn-sm mt-1"
                                                     style="background-color: var(--accent-color); color: var(--contrast-color); border-color: var(--accent-color);">
-                                                    Read More <i class="bi bi-arrow-right ms-1"></i>
+                                                    Batafsil <i class="bi bi-arrow-right ms-1"></i>
                                                 </a>
                                             </div>
                                         </div>

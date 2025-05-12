@@ -1,37 +1,37 @@
 @extends('layouts.app')
 
-@section('title', 'Products')
-@section('description', 'Discover tutorials, coding tips, and web development resources by Iqbolshoh, a passionate full-stack developer and educator.')
-@section('keywords', 'Iqbolshoh, Web Developer, Laravel, PHP, JavaScript, Portfolio, Online Courses, Full-Stack Development, Programming')
+@section('title', 'Mahsulotlar')
+@section('description', 'Iqbolshoh tomonidan taqdim etilgan darsliklar, kodlash maslahatlari va web dasturlash resurslari. Iqbolshoh, ixtisoslashgan full-stack dasturchi va taʼlimchi.')
+@section('keywords', 'Iqbolshoh, Web Dasturchi, Laravel, PHP, JavaScript, Portfolio, Onlayn Kurslar, Full-Stack Dasturlash, Dasturlash')
 
 @section('content')
-    <!-- Page Title -->
+    <!-- Sahifa nomi -->
     <div class="page-title" data-aos="fade">
         <div class="container">
             <nav class="breadcrumbs">
                 <ol>
-                    <li><a href="./">Home</a></li>
-                    <li class="current">Products</li>
+                    <li><a href="./">Bosh sahifa</a></li>
+                    <li class="current">Mahsulotlar</li>
                 </ol>
             </nav>
-            <h1>Products</h1>
+            <h1>Mahsulotlar</h1>
         </div>
-    </div><!-- End of Page Title -->
+    </div><!-- Sahifa nomi tugadi -->
 
 
-    <!-- Products Section -->
+    <!-- Mahsulotlar bo'limi -->
     <section id="portfolio" class="portfolio section">
         <div class="container">
             <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-                <!-- Products Category -->
+                <!-- Mahsulotlar kategoriyasi -->
                 <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter="*" class="filter-active">Hammasi</li>
                     @foreach ($categories as $category)
                         <li data-filter=".filter-category-{{ $category->id }}">{{ $category->name }}</li>
                     @endforeach
                 </ul>
-                <!-- End Products Category -->
+                <!-- Mahsulotlar kategoriyasi tugadi -->
 
                 <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
                     @foreach ($groupedProducts as $category_id => $products)
@@ -52,10 +52,10 @@
                             </div>
                         @endforeach
                     @endforeach
-                </div><!-- End Portfolio Container -->
+                </div><!-- Portfolio konteyneri tugadi -->
 
             </div>
         </div>
-    </section><!-- /Portfolio Section -->
+    </section><!-- /Mahsulotlar bo'limi -->
 
 @endsection

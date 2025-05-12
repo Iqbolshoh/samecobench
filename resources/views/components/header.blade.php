@@ -32,12 +32,12 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="/" class="">Home</a></li>
-                    <li><a href="/about" class="">About Us</a></li>
-                    <li><a href="/services" class="">Services</a></li>
-                    <li><a href="/news" class="">News</a></li>
-                    <li><a href="/products" class="">Products</a></li>
-                    <li><a href="/contact" class="">Contact</a></li>
+                    <li><a href="/" class="">Bosh sahifa</a></li>
+                    <li><a href="/about" class="">Biz haqimizda</a></li>
+                    <li><a href="/services" class="">Xizmatlar</a></li>
+                    <li><a href="/news" class="">Yangiliklar</a></li>
+                    <li><a href="/products" class="">Mahsulotlar</a></li>
+                    <li><a href="/contact" class="">Aloqa</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>

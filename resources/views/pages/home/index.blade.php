@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Home | Iqbolshoh - Full-Stack Developer')
-@section('description', 'Discover tutorials, coding tips, and web development resources by Iqbolshoh, a passionate full-stack developer and educator.')
-@section('keywords', 'Iqbolshoh, Web Developer, Laravel, PHP, JavaScript, Portfolio, Online Courses, Full-Stack Development, Programming')
+@section('title', config('app.name') . ' | Bosh sahifa')
+@section('description', 'Iqbolshoh tomonidan yaratilgan qo‘llanmalar, dasturlash bo‘yicha maslahatlar va web dasturlash resurslarini kashf eting.')
+@section('keywords', 'Iqbolshoh, Web Dasturchi, Laravel, PHP, JavaScript, Portfolio, Onlayn Kurslar, Full-Stack Dasturlash, Dasturlash')
 
 @section('content')
-    <!-- Hero Section -->
+    <!-- Qahramon Bo‘limi (Hero) -->
     <section id="hero" class="hero section">
 
         <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
@@ -47,20 +47,20 @@
 
     </section>
 
-    <!-- About Section -->
+    <!-- Biz haqimizda -->
     <section id="about" class="section about">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row gy-4">
                 @foreach ($aboutItems as $about)
                     <div class="col-lg-6 order-1 order-lg-2">
                         @if (!empty($about['image']))
-                            <img src="{{ asset('storage/' . $about['image']) }}" class="img-fluid" alt="About Us">
+                            <img src="{{ asset('storage/' . $about['image']) }}" class="img-fluid" alt="Biz haqimizda">
                         @endif
                     </div>
                     <div class="col-lg-6 order-2 order-lg-1 content">
                         <h3>{{ $about['title'] }}</h3>
                         <p class="fst-italic">{!!  $about['text_1'] !!}</p>
-                        <h4>Our Services:</h4>
+                        <h4>Xizmatlarimiz:</h4>
                         @if (!empty($about['list_items']))
                             <ul>
                                 @foreach ($about['list_items'] as $item)
@@ -75,7 +75,7 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Xizmatlar bo‘limi -->
     <section id="services" class="services section">
         <div class="container">
             <div class="row gy-4">
