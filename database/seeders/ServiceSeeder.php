@@ -14,36 +14,36 @@ class ServiceSeeder extends Seeder
     {
         $services = [
             [
-                'title' => 'Our Services',
-                'description' => 'We offer personalized solutions tailored for each customer.',
+                'title' => 'Bizning Xizmatlarimiz',
+                'description' => 'Biz har bir mijozga moslashtirilgan shaxsiylashtirilgan yechimlarni taqdim etamiz.',
                 'icon' => 'bi bi-activity',
             ],
             [
-                'title' => 'Custom Solutions',
-                'description' => 'Our services provide unique solutions tailored to every client’s needs.',
+                'title' => 'Maxsus Yechimlar',
+                'description' => 'Bizning xizmatlarimiz har bir mijozning ehtiyojlariga moslashtirilgan noyob yechimlarni taqdim etadi.',
                 'icon' => 'bi bi-broadcast',
             ],
             [
-                'title' => 'Innovative Approaches',
-                'description' => 'We solve your problems using innovative methods and strategies.',
+                'title' => 'Innovatsion Yondashuvlar',
+                'description' => 'Biz sizning muammolaringizni innovatsion usullar va strategiyalar bilan hal qilamiz.',
                 'icon' => 'bi bi-easel',
             ],
             [
-                'title' => 'Fast and Efficient Services',
-                'description' => 'We offer fast and efficient services with a strong focus on quality.',
+                'title' => 'Tez va Samarali Xizmatlar',
+                'description' => 'Biz tez va samarali xizmatlarni taqdim etamiz, yuqori sifatga katta e’tibor qaratamiz.',
                 'icon' => 'bi bi-bounding-box-circles',
             ],
             [
-                'title' => 'Expert Consultation',
-                'description' => 'Our experts provide top-notch consultations to help you grow.',
+                'title' => 'Mutaxassislar Maslahati',
+                'description' => 'Bizning mutaxassislarimiz sizning o‘sishingizga yordam berish uchun eng yuqori darajadagi maslahatlarni taqdim etadi.',
                 'icon' => 'bi bi-calendar4-week',
             ],
             [
-                'title' => 'Customer Communication',
-                'description' => 'We maintain open and friendly communication with our clients. We always listen.',
+                'title' => 'Mijozlar Bilan Aloqa',
+                'description' => 'Biz mijozlarimiz bilan ochiq va do\'stona aloqani saqlaymiz. Biz doimo tinglaymiz.',
                 'icon' => 'bi bi-chat-square-text',
             ],
-        ];
+        ];        
 
         foreach ($services as $service) {
             Service::create($service);

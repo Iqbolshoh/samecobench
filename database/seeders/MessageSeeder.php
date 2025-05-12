@@ -13,53 +13,53 @@ class MessageSeeder extends Seeder
             [
                 'sender_name' => 'Iqbolshoh',
                 'sender_email' => 'iqbolshoh@gmail.com',
-                'subject' => 'Hello!',
-                'body' => 'I have a question about Laravel.',
+                'subject' => 'Salom!',
+                'body' => 'Men Laravel haqida savolim bor.',
                 'status' => 'read',
             ],
             [
                 'sender_name' => 'Ahmad',
                 'sender_email' => 'ahmad@gmail.com',
-                'subject' => 'Offer',
-                'body' => 'Your website is awesome!',
+                'subject' => 'Taklif',
+                'body' => 'Sizning veb-saytingiz juda zo‘r!',
                 'status' => 'read',
             ],
             [
                 'sender_name' => 'Sara',
                 'sender_email' => 'sara@mail.com',
-                'subject' => 'Partnership',
-                'body' => 'I would like to collaborate.',
+                'subject' => 'Hamkorlik',
+                'body' => 'Men hamkorlik qilishni xohlayman.',
                 'status' => 'read',
             ],
             [
                 'sender_name' => 'John',
                 'sender_email' => 'john@example.com',
-                'subject' => 'Project',
-                'body' => 'Your portfolio is impressive.',
+                'subject' => 'Loyiha',
+                'body' => 'Sizning portfolioingiz juda ta’sirli.',
                 'status' => 'read',
             ],
             [
                 'sender_name' => 'Zarina',
                 'sender_email' => 'zarina@yahoo.com',
-                'subject' => 'Need Help',
-                'body' => 'I am getting an error with Filament forms.',
+                'subject' => 'Yordam Kerak',
+                'body' => 'Men Filament shakllari bilan xatolik yuzaga kelmoqda.',
                 'status' => 'unread',
             ],
             [
                 'sender_name' => 'Karim',
                 'sender_email' => 'karim@domain.com',
-                'subject' => 'Check',
-                'body' => 'There is an error on the site.',
+                'subject' => 'Tekshirish',
+                'body' => 'Saytda xatolik mavjud.',
                 'status' => 'unread',
             ],
             [
                 'sender_name' => 'Ali',
                 'sender_email' => 'ali@ali.com',
-                'subject' => 'Question',
-                'body' => 'Please write about setting up NGINX.',
+                'subject' => 'Savol',
+                'body' => 'Iltimos, NGINX sozlamalari haqida yozing.',
                 'status' => 'unread',
             ],
-        ];
+        ];        
 
         collect($messages)->each(function ($message) {
             Message::create($message);

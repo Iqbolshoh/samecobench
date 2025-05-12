@@ -14,26 +14,26 @@ class CategorySeeder extends Seeder
     {
         $categories = [
             [
-                'name' => 'App',
+                'name' => 'Ilova',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'name' => 'Product',
+                'name' => 'Mahsulot',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'name' => 'Branding',
+                'name' => 'Brendlash',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'name' => 'Books',
+                'name' => 'Kitob',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-        ];
+        ];        
 
         collect($categories)->each(function ($category) {
             Category::create($category);

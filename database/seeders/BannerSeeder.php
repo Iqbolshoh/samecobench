@@ -15,32 +15,32 @@ class BannerSeeder extends Seeder
         $banners = [
             [
                 'image' => 'banner-images/01JTW42CNXV32HHWR0N357QHRB.jpg',
-                'title' => 'Welcome to Eterna',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-                'button_text' => 'Get Started',
+                'title' => 'Iqbolshoh saytiga xush kelibsiz',
+                'description' => 'Bizning kompaniyamiz sizga yuqori sifatli xizmatlar, innovatsion yechimlar va professionallikni taqdim etadi. Har doim siz uchun eng yaxshisini yaratishga harakat qilamiz.',
+                'button_text' => 'Boshlash',
                 'button_link' => '/about',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
                 'image' => 'banner-images/01JTW45HB9P8TT6PE97Z3REX2Y.jpg',
-                'title' => 'At vero eos et accusamus',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-                'button_text' => 'Get Started',
+                'title' => 'Biz adolat va ishonchlilik tarafdorimiz',
+                'description' => 'Biz har doim mijozlarimizga eng yaxshi xizmat ko‘rsatishga intilamiz. Har bir loyiha biz uchun muhim va unutilmas tajriba bo‘ladi.',
+                'button_text' => 'Boshlash',
                 'button_link' => '/about',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
                 'image' => 'banner-images/01JTW478VEE3TCW5MHWZ7T8A77.jpg',
-                'title' => 'Temporibus autem quibusdam',
-                'description' => 'Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.',
-                'button_text' => 'Get Started',
+                'title' => 'Biz bilan rivojlaning',
+                'description' => 'Sifatli xizmat, yangilikka ochiqlik va halollik — bizning asosiy qadriyatlarimiz. Siz bilan birga kelajakka qadam qo‘yamiz.',
+                'button_text' => 'Boshlash',
                 'button_link' => '/about',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
-        ];
+        ];        
 
         collect($banners)->each(function ($banner) {
             Banner::create($banner);

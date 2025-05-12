@@ -13,7 +13,7 @@ class SocialLinkSeeder extends Seeder
     public function run(): void
     {
         $socialLinks = [
-            ['title' => 'Description', 'icon' => '', 'link' => '', 'value' => 'This is a brief description of my services and contact information.', 'is_active' => true],
+            ['title' => 'Description', 'icon' => '', 'link' => '', 'value' => 'Bu mening xizmatlarim va aloqa malumotlarimning qisqacha tavsifi.', 'is_active' => true],
             ['title' => 'Address', 'icon' => 'bi bi-geo-alt', 'link' => '', 'value' => 'Samarkand City, Boulevard', 'is_active' => true],
             ['title' => 'Email', 'icon' => 'bi bi-envelope', 'link' => 'mailto:', 'value' => 'iilhomjonov777@gmail.com', 'is_active' => true],
             ['title' => 'Phone', 'icon' => 'bi bi-telephone', 'link' => 'tel:', 'value' => '+998997799333', 'is_active' => true],

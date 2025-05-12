@@ -14,26 +14,26 @@ class NewsSeeder extends Seeder
     {
         $newsList = [
             [
-                'title' => 'Laravel Mastermind: Iqbolshoh’s Blade Conversion Project',
-                'description' => 'Iqbolshoh is taking legacy PHP websites and converting them into modern Laravel Blade apps, making code cleaner, faster, and easier to maintain. His work is gaining traction in the developer community.',
+                'title' => 'Laravel Ustasi: Iqbolshohning Blade Konversiya Loyihasi',
+                'description' => 'Iqbolshoh eski PHP veb-saytlarini zamonaviy Laravel Blade ilovalariga aylantirmoqda, bu esa kodni toza, tez va boshqarish oson qiladi. Uning ishlari dasturchilar jamoasida mashhurlikka erishmoqda.',
                 'image' => 'news-images/01JV1F1WJ31QJH3XCCY9ZEK3T6.jpg',
                 'views' => 453,
             ],
             [
-                'title' => 'Iqbolshoh Ilhomjonov Launches e-kurs.uz Platform',
-                'description' => 'The young and ambitious full-stack developer from Samarkand has officially announced the launch of e-kurs.uz — an educational platform designed to teach C++, Laravel, and modern web technologies!',
+                'title' => 'Iqbolshoh Ilhomjonov e-kurs.uz platformasini ishga tushirdi',
+                'description' => 'Samarqandlik yosh va ambitsiyali full-stack dasturchi Iqbolshoh rasmiy ravishda e-kurs.uz platformasining ishga tushirilganini e’lon qildi — bu C++, Laravel va zamonaviy veb-texnologiyalarni o‘rgatish uchun mo‘ljallangan ta’lim platformasi!',
                 'image' => 'news-images/01JV08YNT4SKC4ZJR4RMPBEVM7.jpg',
                 'views' => 570,
             ],
             [
-                'title' => 'From Student to Mentor: Iqbolshoh Inspires 50+ Learners',
-                'description' => 'With a passion for coding and teaching, Iqbolshoh now mentors over 50 students in C++ and web development. His practical approach and real-world projects have made him a local tech icon.',
+                'title' => 'Talabadan Mentor: Iqbolshoh 50+ O‘rganuvchilarni Ilhomlantiradi',
+                'description' => 'Kodlash va o‘qitishga bo‘lgan ishtiyoq bilan, Iqbolshoh hozirda C++ va veb-dasturlash bo‘yicha 50+ talabani o‘qitmoqda. Uning amaliy yondoshuvi va real loyihalari uni mahalliy texnologiya ikoniga aylantirdi.',
                 'image' => 'news-images/01JV08Z9CPYFHWM6W2YCB7VR8V.jpg',
                 'views' => 720,
             ],
             [
-                'title' => 'Tech Visionary Iqbolshoh Builds Personal Web Server',
-                'description' => 'Using NGINX and Linux, Iqbolshoh turned his computer into a full-fledged web server with a custom domain — test.iqbolshoh.uz. He’s now hosting apps like a pro!',
+                'title' => 'Texnologik Vizyoner Iqbolshoh Shaxsiy Veb-Serverini Qurdi',
+                'description' => 'NGINX va Linuxni ishlatib, Iqbolshoh o‘z kompyuterini to‘liq veb-serverga aylantirdi va test.iqbolshoh.uz kabi o‘z domeniga ega bo‘ldi. Endi u ilovalarni professional tarzda hosting qilmoqda!',
                 'image' => 'news-images/01JV092NGPX2JDHNTQX78KFM7F.jpg',
                 'views' => 777,
             ],

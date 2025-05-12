@@ -10,12 +10,12 @@ class ServiceSectionsSeeder extends Seeder
     public function run()
     {
         ServiceSection::create([
-            'title' => 'Our Services',
-            'text_1' => 'Our expertise and skills are tailored to deliver the best service experience. Our offerings are designed to provide you with high-quality and fast solutions.',
+            'title' => 'Bizning Xizmatlarimiz',
+            'text_1' => 'Bizning tajribamiz va ko\'nikmalarimiz eng yaxshi xizmat tajribasini taqdim etish uchun moslashtirilgan. Bizning takliflarimiz sizga yuqori sifatli va tezkor yechimlarni taqdim etishga mo\'ljallangan.',
             'image' => 'services-images/01JTW56PWQ74AGDHFZTV4Y1V9E.jpg',
-            'sub_title' => 'Our Approach to Product Development and Delivery',
-            'text_2' => 'We support modern technologies in product creation and always strive to deliver the latest innovations.',
-        ]);
+            'sub_title' => 'Mahsulotni Ishlab Chiqish va Yetkazib Berish Yondashuvimiz',
+            'text_2' => 'Biz mahsulot yaratishda zamonaviy texnologiyalarni qo\'llab-quvvatlaymiz va har doim eng so\'nggi innovatsiyalarni taqdim etishga intilamiz.',
+        ]);        
 
         $this->command->info('Service Sections seeded successfully!');
     }
