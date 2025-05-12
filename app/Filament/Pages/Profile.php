@@ -165,7 +165,7 @@ class Profile extends Page implements HasForms
             ->success()
             ->send();
 
-        $this->redirect('/login');
+        $this->redirect('/admin');
     }
 
     /**
