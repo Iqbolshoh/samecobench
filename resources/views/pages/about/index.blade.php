@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('title', 'Biz haqimizda')
-@section('description', 'Iqbolshoh – tajribali full-stack dasturchi va o‘qituvchi tomonidan yaratilgan dasturlash bo‘yicha darslar, maslahatlar va veb-resurslar.')
-@section('keywords', 'Iqbolshoh, Veb Dasturchi, Laravel, PHP, JavaScript, Portfolio, Onlayn Kurslar, Full-Stack Dasturlash, Dasturlash')
+@section('description', 'Sam Ecobench — Samarqandda faoliyat yurituvchi ekologik texnologiyalar kompaniyasi. Biz quyosh energiyasi asosida ishlovchi innovatsion mahsulotlarni ishlab chiqamiz va tarqatamiz. Jamoamiz va missiyamiz bilan tanishing!')
+
+@section('keywords', 'Biz haqimizda, Sam Ecobench, ekologik kompaniya, quyosh energiyasi, Samarqand kompaniya, yashil energiya, ekologik texnologiyalar, jamoa, missiya, ekologik yechimlar')
 
 @section('content')
     <!-- Sahifa sarlavhasi -->

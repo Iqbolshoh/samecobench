@@ -55,12 +55,12 @@ class ProductsResource extends Resource
                 ->maxLength(255),
 
             TextInput::make('price')
-                ->label('Price ($)')
+                ->label("Price (So'm)")
                 ->numeric()
                 ->disabled(fn() => !auth()->user()?->can('product.edit'))
                 ->required()
                 ->minValue(0)
-                ->maxValue(1000000000),
+                ->maxValue(9999999999),
 
             RichEditor::make('description')
                 ->required()
@@ -99,7 +99,7 @@ class ProductsResource extends Resource
                 Tables\Columns\ImageColumn::make('images.0.image_url')->label('Product Image')->circular()->url(fn($record) => asset('storage/' . $record->images->first()->image_url))->sortable(),
                 Tables\Columns\TextColumn::make('product_name')->searchable()->sortable(),
                 Tables\Columns\TextColumn::make('category.name')->label('Category')->badge()->searchable()->sortable(),
-                Tables\Columns\TextColumn::make('price')->label('Price ($)')->money('USD', true)->sortable()->formatStateUsing(fn($state) => number_format($state, 2)),
+                Tables\Columns\TextColumn::make('price')->label("Price (So'm)")->money('UZS', true)->sortable()->formatStateUsing(fn($state) => number_format($state, 2)),
                 Tables\Columns\TextColumn::make('created_at')->since()->sortable(),
             ])
             ->filters([])

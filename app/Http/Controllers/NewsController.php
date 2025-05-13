@@ -25,7 +25,10 @@ class NewsController extends Controller
         $newsItem = News::findOrFail($id);
         $newsItem->incrementView();
 
-        $recentNews = News::latest()->take(5)->get();
+        $recentNews = News::where('id', '!=', $id)
+                      ->orderBy('created_at', 'desc')
+                      ->take(5)
+                      ->get();
 
         return view('pages.news.show', compact('newsItem', 'recentNews'));
     }

@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('title', 'Xizmatlar')
-@section('description', 'Iqbolshoh tomonidan tayyorlangan qo‘llanmalar, kodlash bo‘yicha maslahatlar va web dasturlash resurslarini kashf eting.')
-@section('keywords', 'Iqbolshoh, Web Dasturchi, Laravel, PHP, JavaScript, Portfolio, Onlayn Kurslar, Full-Stack Dasturlash, Dasturlash')
+@section('description', 'Sam Ecobench tomonidan taqdim etiladigan ekologik xizmatlar: quyosh panellari o‘rnatish, smart skameykalar, quyosh ustunlari va boshqa yashil texnologiyalar. Biz bilan yashil kelajak sari qadam qo‘ying!')
+
+@section('keywords', 'xizmatlar, Sam Ecobench xizmatlari, ekologik texnologiyalar, quyosh panellari, smart skameyka, quyosh ustunlari, yashil energiya, samarali yechimlar, energiya tejash')
 
 @section('content')
     <!-- Sahifa sarlavhasi -->

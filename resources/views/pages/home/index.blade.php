@@ -1,8 +1,11 @@
 @extends('layouts.app')
 
-@section('title', config('app.name') . ' | Bosh sahifa')
-@section('description', 'Iqbolshoh tomonidan yaratilgan qo‘llanmalar, dasturlash bo‘yicha maslahatlar va web dasturlash resurslarini kashf eting.')
-@section('keywords', 'Iqbolshoh, Web Dasturchi, Laravel, PHP, JavaScript, Portfolio, Onlayn Kurslar, Full-Stack Dasturlash, Dasturlash')
+@section('title', 'Bosh sahifa | '. config('app.name'))
+
+@section('description', 'Sam Ecobench — Samarqandda joylashgan quyosh energiyasi asosidagi ekologik mahsulotlar va xizmatlarni taklif etuvchi innovatsion kompaniya. Biz bilan kelajakni ekologik toza qiling!')
+
+@section('keywords', 'Sam Ecobench, ekologik mahsulotlar, quyosh energiyasi, Samarqand, quyosh panellari, yashil energiya, smart skameyka, quyosh ustunlari, ekologik texnologiyalar, uzbekistan solar energy')
+
 
 @section('content')
     <!-- Qahramon Bo‘limi (Hero) -->

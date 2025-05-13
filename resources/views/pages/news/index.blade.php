@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('title', 'Yangiliklar')
-@section('description', 'Iqbolshoh tomonidan taqdim etilgan darsliklar, kodlash maslahatlari va web dasturlash resurslari. Iqbolshoh, ixtisoslashgan full-stack dasturchi va ta ºlimchi.')
-@section('keywords', 'Iqbolshoh, Web Dasturchi, Laravel, PHP, JavaScript, Portfolio, Onlayn Kurslar, Full-Stack Dasturlash, Dasturlash')
+@section('description', 'Sam Ecobench kompaniyasining so°Ænggi yangiliklari, ekologik texnologiyalardagi yangiliklar, loyiha boshlanishlari va muvaffaqiyatli ishlar haqida bilib oling.')
+
+@section('keywords', 'yangiliklar, so°Ænggi yangiliklar, ekologik yangiliklar, Sam Ecobench, ekologik texnologiyalar, loyihalar, yashil energiya, yangiliklar Samarqand')
 
 @section('content')
     <div class="page-title" data-aos="fade">

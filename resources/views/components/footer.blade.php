@@ -102,8 +102,8 @@
         <div class="corner corner-bl"></div>
         <div class="corner corner-br"></div>
 
-        <h1 class="heading">Premium Dasturlash Yechimlari</h1>
-        <p class="description">Kelajakni ilg'or kodlar va innovatsion texnologiyalar bilan qurmoqdamiz</p>
+        <h1 class="heading">Premium Dasturlash Xizmatlari</h1>
+        <p class="description">Kelajakni ilg'or kodlar va innovatsion texnologiyalar bilan qurmoqdamiz..</p>
         <div class="cta-buttons">
             <a href="tel:+998997799333" class="btn">
                 <span class="btn-icon"><i class="fa-solid fa-phone"></i></span>

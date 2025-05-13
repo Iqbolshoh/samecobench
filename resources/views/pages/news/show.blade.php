@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('title', 'Yangiliklar Tafsilotlari')
-@section('description', 'Iqbolshoh tomonidan tayyorlangan dasturlash, kodlash bo‘yicha maslahatlar va web dasturlash resurslarini kashf eting.')
-@section('keywords', 'Iqbolshoh, Web Developer, Laravel, PHP, JavaScript, Portfolio, Online Kurslar, Full-Stack Dasturlash, Dasturlash')
+@section('description', 'Sam Ecobench kompaniyasining so‘nggi yangiliklari, ekologik texnologiyalardagi yangiliklar, loyiha boshlanishlari va muvaffaqiyatli ishlar haqida bilib oling.')
+
+@section('keywords', 'yangiliklar, so‘nggi yangiliklar, ekologik yangiliklar, Sam Ecobench, ekologik texnologiyalar, loyihalar, yashil energiya, yangiliklar Samarqand')
 
 <style>
 .content img,
@@ -60,7 +61,7 @@
                                 </ul>
                             </div>
                             <div class="content">
-                                <p style="color: var(--default-color);">{!! $newsItem->description !!}</p>
+                                <p style="color: var(--default-color); ">{!! $newsItem->description !!}</p>
                             </div>
                         </article>
                     </div>

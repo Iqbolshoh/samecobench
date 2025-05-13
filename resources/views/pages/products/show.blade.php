@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('title', 'Mahsulot Tafsilotlari')
-@section('description', 'Iqbolshoh tomonidan taqdim etilgan darsliklar, kodlash maslahatlari va web dasturlash resurslari. Iqbolshoh, ixtisoslashgan full-stack dasturchi va taʼlimchi.')
-@section('keywords', 'Iqbolshoh, Web Dasturchi, Laravel, PHP, JavaScript, Portfolio, Onlayn Kurslar, Full-Stack Dasturlash, Dasturlash')
+@section('description', 'Sam Ecobench tomonidan taqdim etilgan ekologik mahsulotlar: quyosh panellari, smart skameykalar, quyosh ustunlari va boshqa innovatsion yechimlar. Mahsulotlarimiz bilan tanishing!')
+
+@section('keywords', 'mahsulotlar, ekologik mahsulotlar, quyosh paneli, smart skameyka, quyosh ustuni, Sam Ecobench mahsulotlari, yashil texnologiyalar, ekologik yechimlar')
 
 @section('content')
     <div class="page-title" data-aos="fade">
@@ -50,7 +51,7 @@
                             <ul>
                                 <li><strong>Kategoriya</strong>: {{ $product->category->category_name ?? 'Nomalum' }}</li>
                                 <li><strong>Mahsulot Nomi</strong>: {{ $product->product_name }}</li>
-                                <li><strong>Narxi</strong>: {{ number_format($product->price, 0, '', ' ') }} $</li>
+                                <li><strong>Narxi</strong>: {{ number_format($product->price, 0, '', ' ') }} So'm</li>
                             </ul>
                         </div>
                         <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">

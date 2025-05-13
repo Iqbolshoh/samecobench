@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('title', 'Aloqa')
-@section('description', 'Iqbolshoh, to‘liq stack dasturchisi va o‘qituvchisi tomonidan tayyorlangan darsliklar, kodlash bo‘yicha maslahatlar va veb-ishlab chiqish resurslarini kashf eting.')
-@section('keywords', 'Iqbolshoh, Veb Dasturchi, Laravel, PHP, JavaScript, Portfel, Onlayn Kurslar, To‘liq Stack Dasturlash, Dasturlash')
+@section('description', 'Sam Ecobench bilan bog‘laning! Manzilimiz, telefon raqamlarimiz, elektron pochta va ijtimoiy tarmoqlar orqali biz bilan aloqada bo‘ling. Biz sizning savollaringiz va hamkorlik takliflaringiz uchun ochiqmiz!')
+
+@section('keywords', 'aloqa, Sam Ecobench bog‘lanish, kontaktlar, telefon raqam, email, manzil, kompaniya bilan bog‘lanish, savollar, hamkorlik')
 
 @section('content')
     <!-- Sahifa Sarlavhasi -->
@@ -55,7 +56,7 @@
                 <!-- Google Xarita -->
                 <div class="col-lg-6" data-aos="fade-up">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5792.162896136428!2d66.97004124999109!3d39.65178209523781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f13603b3d1c8d49%3A0x312f6005ab01c497!2z0KjQv9C70LDQudC-0LLQvtCy0YfQutC40Y8g0YDQvtCx0YHRgtC10YHQvtCy0YbQu9C10LvQvtC1!5e0!3m2!1sen!2suz!4v1695613534192!5m2!1sen!2suz"
+                        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6142.706736006619!2d66.903936!3d39.664265!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMznCsDM5JzUxLjQiTiA2NsKwNTQnMTQuMiJF!5e0!3m2!1sen!2s!4v1747066826003!5m2!1sen!2s"
                         frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>

@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('title', 'Mahsulotlar')
-@section('description', 'Iqbolshoh tomonidan taqdim etilgan darsliklar, kodlash maslahatlari va web dasturlash resurslari. Iqbolshoh, ixtisoslashgan full-stack dasturchi va taʼlimchi.')
-@section('keywords', 'Iqbolshoh, Web Dasturchi, Laravel, PHP, JavaScript, Portfolio, Onlayn Kurslar, Full-Stack Dasturlash, Dasturlash')
+@section('description', 'Sam Ecobench tomonidan taqdim etilgan ekologik mahsulotlar: quyosh panellari, smart skameykalar, quyosh ustunlari va boshqa innovatsion yechimlar. Mahsulotlarimiz bilan tanishing!')
+
+@section('keywords', 'mahsulotlar, ekologik mahsulotlar, quyosh paneli, smart skameyka, quyosh ustuni, Sam Ecobench mahsulotlari, yashil texnologiyalar, ekologik yechimlar')
 
 @section('content')
     <!-- Sahifa nomi -->
@@ -18,6 +19,25 @@
         </div>
     </div><!-- Sahifa nomi tugadi -->
 
+    <style>
+        .product-link {
+            background-color: var(--accent-color);
+            color: var(--contrast-color);
+            padding: 5px 20px;
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .product-link:hover {
+            color: var(--hover-text-color);
+            transform: scale(1.05);
+        }
+    </style>
 
     <!-- Mahsulotlar bo'limi -->
     <section id="portfolio" class="portfolio section">
@@ -46,6 +66,9 @@
                                         <div class="portfolio-info">
                                             <h4>{{ $product->product_name }}</h4>
                                             <p>{!!  Str::limit($product->description, 400) !!}</p>
+                                            <a href="{{ route('products.show', ['id' => $product->id]) }}" class="product-link">
+                                                Batafsil
+                                            </a>
                                         </div>
                                     </a>
                                 </div>
